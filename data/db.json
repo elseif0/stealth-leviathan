@@ -1,0 +1,1771 @@
+{
+  "meta": {
+    "platform": "Stealth Leviathan",
+    "schemaVersion": 1,
+    "asOf": "2026-11-09",
+    "baseCurrency": "USDT",
+    "penaltyRate": 0.2,
+    "maxMarketSlippage": 0.05,
+    "notes": "asOf: demo tarihi. null yaparsaniz gercek bugunun tarihi kullanilir. Tum hesaplamalar (vesting, KPI, ceza, slippage) js/engine.js icinde bu veriden turetilir."
+  },
+  "auth": {
+    "sessionHours": 12,
+    "maxAttempts": 5,
+    "lockoutSeconds": 60,
+    "users": [
+      {
+        "email": "mustafa@kontrolsoft.com",
+        "password": "Aa102030-+",
+        "name": "Mustafa",
+        "memberId": "LVT-007",
+        "role": "member"
+      }
+    ]
+  },
+  "user": {
+    "memberId": "LVT-007",
+    "alias": "Leviathan 07",
+    "ens": "leviathan-07.eth",
+    "address": "0x7A3f9b21C4d8E0a6F5b3c2D19e8A47f0B6e5C91e",
+    "wallet": {
+      "type": "Safe Multisig",
+      "threshold": "3/5",
+      "chain": "Ethereum"
+    },
+    "tier": "Abyssal",
+    "tierRank": 1,
+    "tierLimits": {
+      "min": 50000,
+      "max": 1000000
+    },
+    "joinedAt": "2021-07-21",
+    "balances": {
+      "USDT": 412500,
+      "USDC": 185000
+    }
+  },
+  "tiers": [
+    {
+      "name": "Abyssal",
+      "rank": 1,
+      "minCommitment": 250000,
+      "perks": "Priority allocation, 1.5x pool cap, treasury yield boost"
+    },
+    {
+      "name": "Deepwater",
+      "rank": 2,
+      "minCommitment": 100000,
+      "perks": "Standard allocation, treasury yield"
+    },
+    {
+      "name": "Pelagic",
+      "rank": 3,
+      "minCommitment": 50000,
+      "perks": "Standard allocation"
+    }
+  ],
+  "projects": [
+    {
+      "id": "aeth",
+      "name": "Aetheris",
+      "ticker": "AETH",
+      "sector": "AI Compute · DePIN",
+      "chain": "Ethereum",
+      "colorSlot": 1,
+      "status": "vesting",
+      "price": 0.148,
+      "priceSource": "spot",
+      "tokenPrice": 0.04,
+      "fdv": 40000000,
+      "totalPool": 1500000,
+      "filled": 1500000,
+      "minAlloc": 10000,
+      "maxAlloc": 100000,
+      "opensAt": "2026-01-06",
+      "closesAt": "2026-01-20",
+      "tgeDate": "2026-03-30",
+      "vesting": {
+        "tgePct": 0.1,
+        "cliffMonths": 2,
+        "linearMonths": 10
+      },
+      "summary": "Decentralised GPU marketplace routing inference jobs to idle data-centre capacity.",
+      "highlights": [
+        "$2.1M monthly protocol revenue",
+        "38k GPUs onboarded"
+      ],
+      "risk": "Medium"
+    },
+    {
+      "id": "noct",
+      "name": "Nocturne Protocol",
+      "ticker": "NOCT",
+      "sector": "ZK Privacy · L2",
+      "chain": "Ethereum",
+      "colorSlot": 2,
+      "status": "vesting",
+      "price": 0.61,
+      "priceSource": "spot",
+      "tokenPrice": 0.25,
+      "fdv": 250000000,
+      "totalPool": 3000000,
+      "filled": 3000000,
+      "minAlloc": 25000,
+      "maxAlloc": 150000,
+      "opensAt": "2026-04-01",
+      "closesAt": "2026-04-15",
+      "tgeDate": "2026-07-01",
+      "vesting": {
+        "tgePct": 0.15,
+        "cliffMonths": 3,
+        "linearMonths": 12
+      },
+      "summary": "Privacy-preserving rollup with native shielded pools and compliance view-keys.",
+      "highlights": [
+        "Mainnet live",
+        "$420M TVL"
+      ],
+      "risk": "Medium"
+    },
+    {
+      "id": "vnta",
+      "name": "Vanta Liquidity",
+      "ticker": "VNTA",
+      "sector": "DeFi · Intent DEX",
+      "chain": "Arbitrum",
+      "colorSlot": 3,
+      "status": "vesting",
+      "price": 0.084,
+      "priceSource": "spot",
+      "tokenPrice": 0.12,
+      "fdv": 120000000,
+      "totalPool": 2000000,
+      "filled": 2000000,
+      "minAlloc": 10000,
+      "maxAlloc": 100000,
+      "opensAt": "2026-02-15",
+      "closesAt": "2026-03-01",
+      "tgeDate": "2026-05-05",
+      "vesting": {
+        "tgePct": 0.2,
+        "cliffMonths": 1,
+        "linearMonths": 8
+      },
+      "summary": "Intent-based cross-chain DEX aggregator with solver auctions.",
+      "highlights": [
+        "Volume down 40% QoQ",
+        "Solver set expanding"
+      ],
+      "risk": "High"
+    },
+    {
+      "id": "orbt",
+      "name": "Orbital RWA",
+      "ticker": "ORBT",
+      "sector": "RWA · Tokenised T-Bills",
+      "chain": "Base",
+      "colorSlot": 4,
+      "status": "pre-tge",
+      "price": 1.1,
+      "priceSource": "otc-indicative",
+      "tokenPrice": 0.8,
+      "fdv": 80000000,
+      "totalPool": 2500000,
+      "filled": 2500000,
+      "minAlloc": 25000,
+      "maxAlloc": 200000,
+      "opensAt": "2026-09-01",
+      "closesAt": "2026-09-15",
+      "tgeDate": "2026-12-01",
+      "vesting": {
+        "tgePct": 0.25,
+        "cliffMonths": 0,
+        "linearMonths": 6
+      },
+      "summary": "Institutional on-chain treasury vaults with daily NAV attestations.",
+      "highlights": [
+        "$310M AUM at launch",
+        "Tier-1 custodian"
+      ],
+      "risk": "Low"
+    },
+    {
+      "id": "hlx",
+      "name": "Helix Bio",
+      "ticker": "HLX",
+      "sector": "DeSci · Biotech IP",
+      "chain": "Solana",
+      "colorSlot": 5,
+      "status": "vesting",
+      "price": 0.0612,
+      "priceSource": "spot",
+      "tokenPrice": 0.018,
+      "fdv": 18000000,
+      "totalPool": 900000,
+      "filled": 900000,
+      "minAlloc": 10000,
+      "maxAlloc": 60000,
+      "opensAt": "2025-08-25",
+      "closesAt": "2025-09-08",
+      "tgeDate": "2025-12-08",
+      "vesting": {
+        "tgePct": 0.05,
+        "cliffMonths": 6,
+        "linearMonths": 18
+      },
+      "summary": "Tokenised biotech IP-NFTs funding early-stage longevity research.",
+      "highlights": [
+        "3 IP-NFTs licensed",
+        "DAO treasury $14M"
+      ],
+      "risk": "High"
+    },
+    {
+      "id": "qrm",
+      "name": "Quorum Labs",
+      "ticker": "QRM",
+      "sector": "Governance · Identity",
+      "chain": "Ethereum",
+      "colorSlot": 6,
+      "status": "vesting",
+      "price": 0.135,
+      "priceSource": "spot",
+      "tokenPrice": 0.05,
+      "fdv": 50000000,
+      "totalPool": 1200000,
+      "filled": 1200000,
+      "minAlloc": 10000,
+      "maxAlloc": 60000,
+      "opensAt": "2025-08-01",
+      "closesAt": "2025-08-12",
+      "tgeDate": "2025-10-30",
+      "vesting": {
+        "tgePct": 0.15,
+        "cliffMonths": 3,
+        "linearMonths": 12
+      },
+      "summary": "Sybil-resistant governance stack with private on-chain voting.",
+      "highlights": [
+        "120 DAOs integrated",
+        "Grant-backed"
+      ],
+      "risk": "Medium"
+    },
+    {
+      "id": "kair",
+      "name": "Kairos Games",
+      "ticker": "KAIR",
+      "sector": "GameFi · Studio",
+      "chain": "Immutable",
+      "colorSlot": 7,
+      "status": "vesting",
+      "price": 0.024,
+      "priceSource": "spot",
+      "tokenPrice": 0.03,
+      "fdv": 30000000,
+      "totalPool": 800000,
+      "filled": 800000,
+      "minAlloc": 10000,
+      "maxAlloc": 50000,
+      "opensAt": "2026-07-06",
+      "closesAt": "2026-07-20",
+      "tgeDate": "2026-08-31",
+      "vesting": {
+        "tgePct": 0.2,
+        "cliffMonths": 0,
+        "linearMonths": 10
+      },
+      "summary": "AAA-lite studio shipping a free-to-play extraction shooter with on-chain items.",
+      "highlights": [
+        "Closed beta live",
+        "Player count below plan"
+      ],
+      "risk": "High"
+    },
+    {
+      "id": "kstl",
+      "name": "Kestrel AI",
+      "ticker": "KSTL",
+      "sector": "AI Agents · Infra",
+      "chain": "Ethereum",
+      "colorSlot": 8,
+      "status": "live",
+      "price": 0.12,
+      "priceSource": "sale",
+      "tokenPrice": 0.12,
+      "fdv": 120000000,
+      "totalPool": 2500000,
+      "filled": 1640000,
+      "minAlloc": 10000,
+      "maxAlloc": 100000,
+      "opensAt": "2026-11-02",
+      "closesAt": "2026-11-21",
+      "tgeDate": "2027-01-15",
+      "vesting": {
+        "tgePct": 0.1,
+        "cliffMonths": 3,
+        "linearMonths": 12
+      },
+      "summary": "Autonomous agent execution layer with verifiable on-chain inference proofs.",
+      "highlights": [
+        "Lead: 2 tier-1 funds",
+        "Agent SDK: 11k devs",
+        "Audit: 2 firms"
+      ],
+      "risk": "Medium"
+    },
+    {
+      "id": "tide",
+      "name": "Tideforge",
+      "ticker": "TIDE",
+      "sector": "Restaking · Security",
+      "chain": "Ethereum",
+      "colorSlot": 8,
+      "status": "live",
+      "price": 0.085,
+      "priceSource": "sale",
+      "tokenPrice": 0.085,
+      "fdv": 85000000,
+      "totalPool": 1800000,
+      "filled": 1710000,
+      "minAlloc": 10000,
+      "maxAlloc": 75000,
+      "opensAt": "2026-11-01",
+      "closesAt": "2026-11-14",
+      "tgeDate": "2026-12-20",
+      "vesting": {
+        "tgePct": 0.15,
+        "cliffMonths": 2,
+        "linearMonths": 9
+      },
+      "summary": "Shared-security marketplace leasing restaked ETH to rollups and oracles.",
+      "highlights": [
+        "$1.2B restaked",
+        "95% filled"
+      ],
+      "risk": "Medium"
+    },
+    {
+      "id": "plz",
+      "name": "Pallas ZK",
+      "ticker": "PLZ",
+      "sector": "ZK Coprocessor",
+      "chain": "Ethereum",
+      "colorSlot": 8,
+      "status": "upcoming",
+      "price": 0.42,
+      "priceSource": "sale",
+      "tokenPrice": 0.42,
+      "fdv": 210000000,
+      "totalPool": 4000000,
+      "filled": 0,
+      "minAlloc": 25000,
+      "maxAlloc": 250000,
+      "opensAt": "2026-11-25",
+      "closesAt": "2026-12-09",
+      "tgeDate": "2027-02-10",
+      "vesting": {
+        "tgePct": 0.08,
+        "cliffMonths": 4,
+        "linearMonths": 18
+      },
+      "summary": "Hardware-accelerated ZK coprocessor for historical state proofs.",
+      "highlights": [
+        "Custom ASIC prover",
+        "Whitelist-only round"
+      ],
+      "risk": "Medium"
+    },
+    {
+      "id": "vrd",
+      "name": "Verdant RWA",
+      "ticker": "VRD",
+      "sector": "RWA · Carbon Credits",
+      "chain": "Polygon",
+      "colorSlot": 8,
+      "status": "upcoming",
+      "price": 0.65,
+      "priceSource": "sale",
+      "tokenPrice": 0.65,
+      "fdv": 65000000,
+      "totalPool": 1200000,
+      "filled": 0,
+      "minAlloc": 10000,
+      "maxAlloc": 60000,
+      "opensAt": "2026-12-03",
+      "closesAt": "2026-12-17",
+      "tgeDate": "2027-01-28",
+      "vesting": {
+        "tgePct": 0.2,
+        "cliffMonths": 0,
+        "linearMonths": 10
+      },
+      "summary": "Verified carbon removal credits with satellite MRV and on-chain retirement.",
+      "highlights": [
+        "Registry-integrated",
+        "Corporate offtake signed"
+      ],
+      "risk": "Low"
+    }
+  ],
+  "positions": [
+    {
+      "id": "pos-aeth-1",
+      "projectId": "aeth",
+      "source": "primary",
+      "acquiredAt": "2026-01-20",
+      "commitment": 25000,
+      "tokens": 625000,
+      "events": [
+        {
+          "type": "claim",
+          "date": "2026-03-31",
+          "tokens": 62500,
+          "price": 0.092
+        },
+        {
+          "type": "claim",
+          "date": "2026-07-02",
+          "tokens": 56250,
+          "price": 0.108
+        },
+        {
+          "type": "claim",
+          "date": "2026-10-21",
+          "tokens": 168750,
+          "price": 0.139
+        }
+      ]
+    },
+    {
+      "id": "pos-aeth-2",
+      "projectId": "aeth",
+      "source": "otc",
+      "acquiredAt": "2026-10-13",
+      "commitment": 5000,
+      "tokens": 40000,
+      "events": []
+    },
+    {
+      "id": "pos-noct-1",
+      "projectId": "noct",
+      "source": "primary",
+      "acquiredAt": "2026-04-10",
+      "commitment": 30000,
+      "tokens": 120000,
+      "events": [
+        {
+          "type": "claim",
+          "date": "2026-07-02",
+          "tokens": 18000,
+          "price": 0.47
+        }
+      ]
+    },
+    {
+      "id": "pos-vnta-1",
+      "projectId": "vnta",
+      "source": "primary",
+      "acquiredAt": "2026-02-28",
+      "commitment": 25000,
+      "tokens": 208333,
+      "events": [
+        {
+          "type": "claim",
+          "date": "2026-05-06",
+          "tokens": 41666,
+          "price": 0.14
+        },
+        {
+          "type": "claim",
+          "date": "2026-08-07",
+          "tokens": 41667,
+          "price": 0.105
+        },
+        {
+          "type": "exit",
+          "date": "2026-09-02",
+          "tokens": 30000,
+          "mark": 0.095,
+          "grossUsd": 2850,
+          "penaltyUsd": 570,
+          "listedUsd": 2280,
+          "netUsd": 2245,
+          "mode": "market"
+        },
+        {
+          "type": "claim",
+          "date": "2026-10-21",
+          "tokens": 31666,
+          "price": 0.088
+        }
+      ]
+    },
+    {
+      "id": "pos-orbt-1",
+      "projectId": "orbt",
+      "source": "primary",
+      "acquiredAt": "2026-09-15",
+      "commitment": 40000,
+      "tokens": 50000,
+      "events": []
+    },
+    {
+      "id": "pos-hlx-1",
+      "projectId": "hlx",
+      "source": "primary",
+      "acquiredAt": "2025-09-05",
+      "commitment": 12000,
+      "tokens": 666667,
+      "events": [
+        {
+          "type": "claim",
+          "date": "2025-12-09",
+          "tokens": 33333,
+          "price": 0.034
+        },
+        {
+          "type": "claim",
+          "date": "2026-09-12",
+          "tokens": 105555,
+          "price": 0.052
+        },
+        {
+          "type": "claim",
+          "date": "2026-10-21",
+          "tokens": 29518,
+          "price": 0.058
+        }
+      ]
+    },
+    {
+      "id": "pos-qrm-1",
+      "projectId": "qrm",
+      "source": "primary",
+      "acquiredAt": "2025-08-12",
+      "commitment": 20000,
+      "tokens": 400000,
+      "events": [
+        {
+          "type": "claim",
+          "date": "2025-10-31",
+          "tokens": 60000,
+          "price": 0.09
+        },
+        {
+          "type": "claim",
+          "date": "2026-04-02",
+          "tokens": 56666,
+          "price": 0.11
+        },
+        {
+          "type": "claim",
+          "date": "2026-07-01",
+          "tokens": 85000,
+          "price": 0.12
+        },
+        {
+          "type": "claim",
+          "date": "2026-10-21",
+          "tokens": 85000,
+          "price": 0.128
+        }
+      ]
+    },
+    {
+      "id": "pos-kair-1",
+      "projectId": "kair",
+      "source": "primary",
+      "acquiredAt": "2026-07-20",
+      "commitment": 15000,
+      "tokens": 500000,
+      "events": [
+        {
+          "type": "claim",
+          "date": "2026-09-01",
+          "tokens": 100000,
+          "price": 0.035
+        },
+        {
+          "type": "claim",
+          "date": "2026-10-21",
+          "tokens": 40000,
+          "price": 0.026
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "id": "h-slc",
+      "name": "Solace Network",
+      "ticker": "SLC",
+      "sector": "Modular DA",
+      "commitment": 15000,
+      "entryPrice": 0.05,
+      "avgExitPrice": 0.23,
+      "investedAt": "2021-08-16",
+      "closedAt": "2022-03-10",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-hal",
+      "name": "Halcyon Swap",
+      "ticker": "HAL",
+      "sector": "DEX",
+      "commitment": 20000,
+      "entryPrice": 0.2,
+      "avgExitPrice": 0.52,
+      "investedAt": "2021-09-22",
+      "closedAt": "2022-05-04",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-obs",
+      "name": "Obsidian Games",
+      "ticker": "OBS",
+      "sector": "GameFi",
+      "commitment": 12000,
+      "entryPrice": 0.02,
+      "avgExitPrice": 0.011,
+      "investedAt": "2021-11-08",
+      "closedAt": "2022-06-20",
+      "exitRoute": "Sold into bear market"
+    },
+    {
+      "id": "h-bor",
+      "name": "Borealis Bridge",
+      "ticker": "BOR",
+      "sector": "Interoperability",
+      "commitment": 18000,
+      "entryPrice": 0.15,
+      "avgExitPrice": 0.063,
+      "investedAt": "2022-01-14",
+      "closedAt": "2022-11-28",
+      "exitRoute": "OTC early exit (−20% penalty)"
+    },
+    {
+      "id": "h-mrd",
+      "name": "Meridian Data",
+      "ticker": "MRD",
+      "sector": "Oracle",
+      "commitment": 16000,
+      "entryPrice": 0.3,
+      "avgExitPrice": 0.435,
+      "investedAt": "2022-04-05",
+      "closedAt": "2023-06-12",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-frs",
+      "name": "Ferrous Labs",
+      "ticker": "FRS",
+      "sector": "ZK Infrastructure",
+      "commitment": 20000,
+      "entryPrice": 0.08,
+      "avgExitPrice": 0.272,
+      "investedAt": "2022-09-19",
+      "closedAt": "2023-11-30",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-ivy",
+      "name": "Ivory ID",
+      "ticker": "IVY",
+      "sector": "Identity",
+      "commitment": 14000,
+      "entryPrice": 0.12,
+      "avgExitPrice": 0.216,
+      "investedAt": "2023-02-07",
+      "closedAt": "2024-01-22",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-qln",
+      "name": "Quillon DAO",
+      "ticker": "QLN",
+      "sector": "Governance",
+      "commitment": 15000,
+      "entryPrice": 0.04,
+      "avgExitPrice": 0.164,
+      "investedAt": "2023-05-15",
+      "closedAt": "2024-03-18",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-crs",
+      "name": "Cirrus Storage",
+      "ticker": "CRS",
+      "sector": "DePIN · Storage",
+      "commitment": 18000,
+      "entryPrice": 0.06,
+      "avgExitPrice": 0.162,
+      "investedAt": "2023-08-21",
+      "closedAt": "2024-07-29",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-cpw",
+      "name": "Cipherwave",
+      "ticker": "CPW",
+      "sector": "MPC Wallets",
+      "commitment": 25000,
+      "entryPrice": 0.16,
+      "avgExitPrice": 0.448,
+      "investedAt": "2023-11-06",
+      "closedAt": "2025-01-20",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-glm",
+      "name": "Gallium Perps",
+      "ticker": "GLM",
+      "sector": "Perp DEX",
+      "commitment": 20000,
+      "entryPrice": 0.25,
+      "avgExitPrice": 0.425,
+      "investedAt": "2024-02-12",
+      "closedAt": "2025-02-24",
+      "exitRoute": "Partial OTC exit + market"
+    },
+    {
+      "id": "h-emb",
+      "name": "Ember Social",
+      "ticker": "EMB",
+      "sector": "SocialFi",
+      "commitment": 12000,
+      "entryPrice": 0.03,
+      "avgExitPrice": 0.0195,
+      "investedAt": "2024-05-20",
+      "closedAt": "2025-04-14",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-plc",
+      "name": "Pelican Pay",
+      "ticker": "PLC",
+      "sector": "Payments",
+      "commitment": 16600,
+      "entryPrice": 0.1,
+      "avgExitPrice": 0.21,
+      "investedAt": "2024-08-26",
+      "closedAt": "2025-08-18",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-lmn",
+      "name": "Lumen DePIN",
+      "ticker": "LMN",
+      "sector": "Wireless DePIN",
+      "commitment": 15000,
+      "entryPrice": 0.09,
+      "avgExitPrice": 0.0765,
+      "investedAt": "2024-11-11",
+      "closedAt": "2025-11-03",
+      "exitRoute": "OTC early exit (−20% penalty)"
+    },
+    {
+      "id": "h-vrt",
+      "name": "Veritas AI",
+      "ticker": "VRT",
+      "sector": "AI Data",
+      "commitment": 22000,
+      "entryPrice": 0.11,
+      "avgExitPrice": 0.297,
+      "investedAt": "2025-02-17",
+      "closedAt": "2026-03-09",
+      "exitRoute": "Claimed & sold on market"
+    },
+    {
+      "id": "h-stm",
+      "name": "Stratum Lend",
+      "ticker": "STM",
+      "sector": "Lending",
+      "commitment": 18000,
+      "entryPrice": 0.07,
+      "avgExitPrice": 0.112,
+      "investedAt": "2025-05-26",
+      "closedAt": "2026-08-24",
+      "exitRoute": "Claimed & sold on market"
+    }
+  ],
+  "pledges": [],
+  "orderbooks": {
+    "aeth": {
+      "bids": [
+        {
+          "id": "b-aeth-1",
+          "maker": "LVT-023",
+          "tokens": 25000,
+          "price": 0.129,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-aeth-2",
+          "maker": "LVT-041",
+          "tokens": 35000,
+          "price": 0.1272,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "b-aeth-3",
+          "maker": "LVT-012",
+          "tokens": 50000,
+          "price": 0.1255,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "b-aeth-4",
+          "maker": "LVT-058",
+          "tokens": 70000,
+          "price": 0.1238,
+          "date": "2026-11-05"
+        },
+        {
+          "id": "b-aeth-5",
+          "maker": "LVT-019",
+          "tokens": 120000,
+          "price": 0.1215,
+          "date": "2026-11-03"
+        },
+        {
+          "id": "b-aeth-6",
+          "maker": "LVT-033",
+          "tokens": 250000,
+          "price": 0.118,
+          "date": "2026-10-29"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-aeth-1",
+          "maker": "LVT-047",
+          "grossTokens": 50000,
+          "tokens": 40000,
+          "price": 0.1335,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "a-aeth-2",
+          "maker": "LVT-015",
+          "grossTokens": 80000,
+          "tokens": 64000,
+          "price": 0.1352,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "a-aeth-3",
+          "maker": "LVT-061",
+          "grossTokens": 150000,
+          "tokens": 120000,
+          "price": 0.137,
+          "date": "2026-11-02"
+        },
+        {
+          "id": "a-aeth-4",
+          "maker": "LVT-029",
+          "grossTokens": 40000,
+          "tokens": 32000,
+          "price": 0.1398,
+          "date": "2026-10-30"
+        }
+      ]
+    },
+    "noct": {
+      "bids": [
+        {
+          "id": "b-noct-1",
+          "maker": "LVT-008",
+          "tokens": 8000,
+          "price": 0.548,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-noct-2",
+          "maker": "LVT-052",
+          "tokens": 12000,
+          "price": 0.541,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "b-noct-3",
+          "maker": "LVT-017",
+          "tokens": 20000,
+          "price": 0.532,
+          "date": "2026-11-05"
+        },
+        {
+          "id": "b-noct-4",
+          "maker": "LVT-036",
+          "tokens": 35000,
+          "price": 0.518,
+          "date": "2026-11-02"
+        },
+        {
+          "id": "b-noct-5",
+          "maker": "LVT-044",
+          "tokens": 60000,
+          "price": 0.5,
+          "date": "2026-10-28"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-noct-1",
+          "maker": "LVT-027",
+          "grossTokens": 12000,
+          "tokens": 9600,
+          "price": 0.566,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "a-noct-2",
+          "maker": "LVT-009",
+          "grossTokens": 20000,
+          "tokens": 16000,
+          "price": 0.574,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "a-noct-3",
+          "maker": "LVT-063",
+          "grossTokens": 30000,
+          "tokens": 24000,
+          "price": 0.585,
+          "date": "2026-11-04"
+        },
+        {
+          "id": "a-noct-4",
+          "maker": "LVT-021",
+          "grossTokens": 10000,
+          "tokens": 8000,
+          "price": 0.596,
+          "date": "2026-10-31"
+        }
+      ]
+    },
+    "vnta": {
+      "bids": [
+        {
+          "id": "b-vnta-1",
+          "maker": "LVT-031",
+          "tokens": 60000,
+          "price": 0.0712,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-vnta-2",
+          "maker": "LVT-014",
+          "tokens": 90000,
+          "price": 0.07,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "b-vnta-3",
+          "maker": "LVT-055",
+          "tokens": 150000,
+          "price": 0.0688,
+          "date": "2026-11-04"
+        },
+        {
+          "id": "b-vnta-4",
+          "maker": "LVT-002",
+          "tokens": 300000,
+          "price": 0.067,
+          "date": "2026-10-30"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-vnta-1",
+          "maker": "LVT-048",
+          "grossTokens": 100000,
+          "tokens": 80000,
+          "price": 0.0748,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "a-vnta-2",
+          "maker": "LVT-039",
+          "grossTokens": 250000,
+          "tokens": 200000,
+          "price": 0.076,
+          "date": "2026-11-05"
+        },
+        {
+          "id": "a-vnta-3",
+          "maker": "LVT-011",
+          "grossTokens": 150000,
+          "tokens": 120000,
+          "price": 0.0779,
+          "date": "2026-11-01"
+        }
+      ]
+    },
+    "orbt": {
+      "bids": [
+        {
+          "id": "b-orbt-1",
+          "maker": "LVT-050",
+          "tokens": 10000,
+          "price": 0.96,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-orbt-2",
+          "maker": "LVT-024",
+          "tokens": 15000,
+          "price": 0.945,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "b-orbt-3",
+          "maker": "LVT-037",
+          "tokens": 25000,
+          "price": 0.93,
+          "date": "2026-11-05"
+        },
+        {
+          "id": "b-orbt-4",
+          "maker": "LVT-005",
+          "tokens": 40000,
+          "price": 0.9,
+          "date": "2026-11-01"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-orbt-1",
+          "maker": "LVT-060",
+          "grossTokens": 10000,
+          "tokens": 8000,
+          "price": 1,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "a-orbt-2",
+          "maker": "LVT-018",
+          "grossTokens": 15000,
+          "tokens": 12000,
+          "price": 1.02,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "a-orbt-3",
+          "maker": "LVT-042",
+          "grossTokens": 25000,
+          "tokens": 20000,
+          "price": 1.04,
+          "date": "2026-11-03"
+        }
+      ]
+    },
+    "hlx": {
+      "bids": [
+        {
+          "id": "b-hlx-1",
+          "maker": "LVT-026",
+          "tokens": 300000,
+          "price": 0.0531,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-hlx-2",
+          "maker": "LVT-053",
+          "tokens": 400000,
+          "price": 0.0524,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "b-hlx-3",
+          "maker": "LVT-010",
+          "tokens": 700000,
+          "price": 0.0515,
+          "date": "2026-11-03"
+        },
+        {
+          "id": "b-hlx-4",
+          "maker": "LVT-034",
+          "tokens": 1200000,
+          "price": 0.05,
+          "date": "2026-10-29"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-hlx-1",
+          "maker": "LVT-040",
+          "grossTokens": 300000,
+          "tokens": 240000,
+          "price": 0.0566,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "a-hlx-2",
+          "maker": "LVT-022",
+          "grossTokens": 500000,
+          "tokens": 400000,
+          "price": 0.0574,
+          "date": "2026-11-04"
+        },
+        {
+          "id": "a-hlx-3",
+          "maker": "LVT-057",
+          "grossTokens": 750000,
+          "tokens": 600000,
+          "price": 0.0588,
+          "date": "2026-10-31"
+        }
+      ]
+    },
+    "qrm": {
+      "bids": [
+        {
+          "id": "b-qrm-1",
+          "maker": "LVT-016",
+          "tokens": 20000,
+          "price": 0.118,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-qrm-2",
+          "maker": "LVT-043",
+          "tokens": 35000,
+          "price": 0.116,
+          "date": "2026-11-06"
+        },
+        {
+          "id": "b-qrm-3",
+          "maker": "LVT-030",
+          "tokens": 60000,
+          "price": 0.1135,
+          "date": "2026-11-04"
+        },
+        {
+          "id": "b-qrm-4",
+          "maker": "LVT-059",
+          "tokens": 100000,
+          "price": 0.11,
+          "date": "2026-10-30"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-qrm-1",
+          "maker": "LVT-025",
+          "grossTokens": 20000,
+          "tokens": 16000,
+          "price": 0.124,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "a-qrm-2",
+          "maker": "LVT-038",
+          "grossTokens": 40000,
+          "tokens": 32000,
+          "price": 0.1265,
+          "date": "2026-11-05"
+        },
+        {
+          "id": "a-qrm-3",
+          "maker": "LVT-004",
+          "grossTokens": 60000,
+          "tokens": 48000,
+          "price": 0.129,
+          "date": "2026-11-01"
+        }
+      ]
+    },
+    "kair": {
+      "bids": [
+        {
+          "id": "b-kair-1",
+          "maker": "LVT-049",
+          "tokens": 150000,
+          "price": 0.0198,
+          "date": "2026-11-08"
+        },
+        {
+          "id": "b-kair-2",
+          "maker": "LVT-013",
+          "tokens": 250000,
+          "price": 0.0194,
+          "date": "2026-11-05"
+        },
+        {
+          "id": "b-kair-3",
+          "maker": "LVT-062",
+          "tokens": 400000,
+          "price": 0.0188,
+          "date": "2026-11-02"
+        }
+      ],
+      "asks": [
+        {
+          "id": "a-kair-1",
+          "maker": "LVT-035",
+          "grossTokens": 150000,
+          "tokens": 120000,
+          "price": 0.0214,
+          "date": "2026-11-07"
+        },
+        {
+          "id": "a-kair-2",
+          "maker": "LVT-020",
+          "grossTokens": 250000,
+          "tokens": 200000,
+          "price": 0.0219,
+          "date": "2026-11-03"
+        }
+      ]
+    }
+  },
+  "treasury": {
+    "collectedBeforeWindow": 1036400,
+    "distributionRate": 0.6,
+    "eligibleAum": 31200000,
+    "membersCount": 64,
+    "userClaimedYield": 9870,
+    "userAccruedYield": 6420,
+    "monthlyInflows": [
+      {
+        "month": "2025-12",
+        "penalties": 68400
+      },
+      {
+        "month": "2026-01",
+        "penalties": 91200
+      },
+      {
+        "month": "2026-02",
+        "penalties": 74800
+      },
+      {
+        "month": "2026-03",
+        "penalties": 112500
+      },
+      {
+        "month": "2026-04",
+        "penalties": 86300
+      },
+      {
+        "month": "2026-05",
+        "penalties": 143900
+      },
+      {
+        "month": "2026-06",
+        "penalties": 98600
+      },
+      {
+        "month": "2026-07",
+        "penalties": 121400
+      },
+      {
+        "month": "2026-08",
+        "penalties": 77100
+      },
+      {
+        "month": "2026-09",
+        "penalties": 168200
+      },
+      {
+        "month": "2026-10",
+        "penalties": 104700
+      },
+      {
+        "month": "2026-11",
+        "penalties": 38600
+      }
+    ],
+    "recentPenalties": [
+      {
+        "date": "2026-11-08",
+        "ticker": "AETH",
+        "grossUsd": 8400,
+        "penaltyUsd": 1680
+      },
+      {
+        "date": "2026-11-07",
+        "ticker": "NOCT",
+        "grossUsd": 21000,
+        "penaltyUsd": 4200
+      },
+      {
+        "date": "2026-11-06",
+        "ticker": "HLX",
+        "grossUsd": 39800,
+        "penaltyUsd": 7960
+      },
+      {
+        "date": "2026-11-04",
+        "ticker": "VNTA",
+        "grossUsd": 26500,
+        "penaltyUsd": 5300
+      },
+      {
+        "date": "2026-11-03",
+        "ticker": "ORBT",
+        "grossUsd": 15300,
+        "penaltyUsd": 3060
+      }
+    ]
+  },
+  "portfolioHistory": [
+    {
+      "month": "2025-12",
+      "invested": 72000,
+      "value": 125100
+    },
+    {
+      "month": "2026-01",
+      "invested": 97000,
+      "value": 196700
+    },
+    {
+      "month": "2026-02",
+      "invested": 122000,
+      "value": 205800
+    },
+    {
+      "month": "2026-03",
+      "invested": 100000,
+      "value": 158800
+    },
+    {
+      "month": "2026-04",
+      "invested": 130000,
+      "value": 226800
+    },
+    {
+      "month": "2026-05",
+      "invested": 130000,
+      "value": 249500
+    },
+    {
+      "month": "2026-06",
+      "invested": 130000,
+      "value": 235400
+    },
+    {
+      "month": "2026-07",
+      "invested": 145000,
+      "value": 229500
+    },
+    {
+      "month": "2026-08",
+      "invested": 127000,
+      "value": 207200
+    },
+    {
+      "month": "2026-09",
+      "invested": 167000,
+      "value": 255400
+    },
+    {
+      "month": "2026-10",
+      "invested": 172000,
+      "value": 228200
+    }
+  ],
+  "ledger": [
+    {
+      "date": "2026-10-21",
+      "type": "claim",
+      "label": "Claimed 168,750 AETH",
+      "amount": 23456.25,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-10-21",
+      "type": "claim",
+      "label": "Claimed 31,666 VNTA",
+      "amount": 2786.61,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-10-21",
+      "type": "claim",
+      "label": "Claimed 29,518 HLX",
+      "amount": 1712.04,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-10-21",
+      "type": "claim",
+      "label": "Claimed 85,000 QRM",
+      "amount": 10880,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-10-21",
+      "type": "claim",
+      "label": "Claimed 40,000 KAIR",
+      "amount": 1040,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "otc-buy",
+      "label": "OTC buy · 40,000 AETH rights",
+      "amount": -5000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "pledge",
+      "label": "Allocation settled · ORBT",
+      "amount": -40000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-09-12",
+      "type": "claim",
+      "label": "Claimed 105,555 HLX",
+      "amount": 5488.86,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "exit",
+      "label": "Early exit · VNTA (−$570 penalty)",
+      "amount": 2245,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-09-01",
+      "type": "claim",
+      "label": "Claimed 100,000 KAIR",
+      "amount": 3500,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "exit",
+      "label": "Deal closed · STM (1.60x)",
+      "amount": 28800,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "claim",
+      "label": "Claimed 41,667 VNTA",
+      "amount": 4375.04,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-07-20",
+      "type": "pledge",
+      "label": "Allocation settled · KAIR",
+      "amount": -15000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-07-02",
+      "type": "claim",
+      "label": "Claimed 56,250 AETH",
+      "amount": 6075,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-07-02",
+      "type": "claim",
+      "label": "Claimed 18,000 NOCT",
+      "amount": 8460,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-07-01",
+      "type": "claim",
+      "label": "Claimed 85,000 QRM",
+      "amount": 10200,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-05-06",
+      "type": "claim",
+      "label": "Claimed 41,666 VNTA",
+      "amount": 5833.24,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-04-10",
+      "type": "pledge",
+      "label": "Allocation settled · NOCT",
+      "amount": -30000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-04-02",
+      "type": "claim",
+      "label": "Claimed 56,666 QRM",
+      "amount": 6233.26,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-03-31",
+      "type": "claim",
+      "label": "Claimed 62,500 AETH",
+      "amount": 5750,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2026-03-09",
+      "type": "exit",
+      "label": "Deal closed · VRT (2.70x)",
+      "amount": 59400,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-02-28",
+      "type": "pledge",
+      "label": "Allocation settled · VNTA",
+      "amount": -25000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2026-01-20",
+      "type": "pledge",
+      "label": "Allocation settled · AETH",
+      "amount": -25000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-12-09",
+      "type": "claim",
+      "label": "Claimed 33,333 HLX",
+      "amount": 1133.32,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2025-11-03",
+      "type": "exit",
+      "label": "Deal closed · LMN (0.85x)",
+      "amount": 12750,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-10-31",
+      "type": "claim",
+      "label": "Claimed 60,000 QRM",
+      "amount": 5400,
+      "currency": "USDT-eq"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "pledge",
+      "label": "Allocation settled · HLX",
+      "amount": -12000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-08-18",
+      "type": "exit",
+      "label": "Deal closed · PLC (2.10x)",
+      "amount": 34860,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-08-12",
+      "type": "pledge",
+      "label": "Allocation settled · QRM",
+      "amount": -20000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-05-26",
+      "type": "pledge",
+      "label": "Allocation settled · STM",
+      "amount": -18000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-04-14",
+      "type": "exit",
+      "label": "Deal closed · EMB (0.65x)",
+      "amount": 7800,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-02-24",
+      "type": "exit",
+      "label": "Deal closed · GLM (1.70x)",
+      "amount": 34000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-02-17",
+      "type": "pledge",
+      "label": "Allocation settled · VRT",
+      "amount": -22000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2025-01-20",
+      "type": "exit",
+      "label": "Deal closed · CPW (2.80x)",
+      "amount": 70000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-11-11",
+      "type": "pledge",
+      "label": "Allocation settled · LMN",
+      "amount": -15000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-08-26",
+      "type": "pledge",
+      "label": "Allocation settled · PLC",
+      "amount": -16600,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-07-29",
+      "type": "exit",
+      "label": "Deal closed · CRS (2.70x)",
+      "amount": 48600,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-05-20",
+      "type": "pledge",
+      "label": "Allocation settled · EMB",
+      "amount": -12000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-03-18",
+      "type": "exit",
+      "label": "Deal closed · QLN (4.10x)",
+      "amount": 61500,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-02-12",
+      "type": "pledge",
+      "label": "Allocation settled · GLM",
+      "amount": -20000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2024-01-22",
+      "type": "exit",
+      "label": "Deal closed · IVY (1.80x)",
+      "amount": 25200,
+      "currency": "USDT"
+    },
+    {
+      "date": "2023-11-30",
+      "type": "exit",
+      "label": "Deal closed · FRS (3.40x)",
+      "amount": 68000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2023-11-06",
+      "type": "pledge",
+      "label": "Allocation settled · CPW",
+      "amount": -25000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2023-08-21",
+      "type": "pledge",
+      "label": "Allocation settled · CRS",
+      "amount": -18000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2023-06-12",
+      "type": "exit",
+      "label": "Deal closed · MRD (1.45x)",
+      "amount": 23200,
+      "currency": "USDT"
+    },
+    {
+      "date": "2023-05-15",
+      "type": "pledge",
+      "label": "Allocation settled · QLN",
+      "amount": -15000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2023-02-07",
+      "type": "pledge",
+      "label": "Allocation settled · IVY",
+      "amount": -14000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-11-28",
+      "type": "exit",
+      "label": "Deal closed · BOR (0.42x)",
+      "amount": 7560,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-09-19",
+      "type": "pledge",
+      "label": "Allocation settled · FRS",
+      "amount": -20000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-06-20",
+      "type": "exit",
+      "label": "Deal closed · OBS (0.55x)",
+      "amount": 6600,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-05-04",
+      "type": "exit",
+      "label": "Deal closed · HAL (2.60x)",
+      "amount": 52000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-04-05",
+      "type": "pledge",
+      "label": "Allocation settled · MRD",
+      "amount": -16000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-03-10",
+      "type": "exit",
+      "label": "Deal closed · SLC (4.60x)",
+      "amount": 69000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2022-01-14",
+      "type": "pledge",
+      "label": "Allocation settled · BOR",
+      "amount": -18000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2021-11-08",
+      "type": "pledge",
+      "label": "Allocation settled · OBS",
+      "amount": -12000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2021-09-22",
+      "type": "pledge",
+      "label": "Allocation settled · HAL",
+      "amount": -20000,
+      "currency": "USDT"
+    },
+    {
+      "date": "2021-08-16",
+      "type": "pledge",
+      "label": "Allocation settled · SLC",
+      "amount": -15000,
+      "currency": "USDT"
+    }
+  ]
+}
